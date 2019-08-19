@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+$shadow: 0 1px 0 0 #dedede;
+$shadow_segment: 2px 1px 3px 1px #dedede;
+$radius:7px;
+$primary:#E91E63;
+$cloud: #ecf0f1;
+$white: #fff;
+$peter_river: #3498db;
+$emerald: #2ecc71;
+$alizarin: #e74c3c;
+
+$button_radius: 3px;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Quicksand;
+}
+
+.navbar {
+  border: transparent;
+  padding: 10px;
+  box-shadow: $shadow;
+  display: flex;
+  flex-direction: row;
+  .navbar-item {
+    padding: 5px;
+    margin: 0 2px 2px;
+    a {
+      text-decoration: none;
+      color: #101010;
+    }
+  }
+}
+
+.container {
+  padding:10px;
+  .segment {
+    border: transparent;
+    padding: 10px;
+    box-shadow: $shadow_segment;
+    background-color: $white;
+    width: 25%;
+    .segment-input {
+      border: transparent;
+      border: 3px;
+      padding: 5px;
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      border: 1px solid $cloud;
+      border-radius: 3px;
+      padding: inherit;
+    }
+  }
+}
+
+.button-primary {
+  border: transparent;
+  border-radius: 3px;
+  padding: 10px;
+  color: $white;
+  font-size: 16px;
+  background: $primary;
+}
+
+.button-primary:hover {
+  border: 1px solid $primary !important;
+  color: $primary;
+  padding: 10px;  
+  background: none;
+}
+
+
+.button-info { 
+  border: transparent;
+  border-radius: 3px;
+  padding: 10px;
+  color: $white;
+  font-size: 16px;
+  background: $peter_river;
+}
+
+.button-info:hover {
+  border: 1px solid $peter_river!important;
+  color: $peter_river;
+  padding: 10px;  
+  background: none;
+}
+
+
+.button-success { 
+  border: transparent;
+  border-radius: 3px;
+  padding: 10px;
+  background: $emerald;
+  color: $white;
+  font-size: 16px;
+}
+
+.button-success:hover { 
+  border: 1px solid $emerald !important;
+  color: $emerald;
+  padding: 10px;  
+  background: none;
+}

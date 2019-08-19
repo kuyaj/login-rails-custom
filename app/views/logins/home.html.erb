@@ -1,0 +1,14 @@
+<div class="container">
+<div class="segment">
+  <span> Were glad your back, <b><%= current_user.name %></b></span>
+</div>
+<br>
+  <% @users.each do |item| %>
+    <div class="segment">
+        <p>Name:  <%= item.name %></p>
+       <p>Email:  <%= item.email  %></li>
+    </div>
+    <br>
+  <% end %>
+
+</div>

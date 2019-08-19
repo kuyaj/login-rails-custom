@@ -1,0 +1,16 @@
+<div class="segment">
+  <h1>Login</h1>
+
+<%= form_tag '/login' do %>
+<div class="segment-input">
+  Email : <%= text_field_tag :email, nil, placeholder: "eg: your_universe@example.com"%>
+</div>
+<div class="segment-input"> 
+  Password : <%= password_field_tag :password, nil, placeholder: "Password" %>
+</div>
+<div class="segment-input">
+   <%= submit_tag "Login", class: "button-info"%> 
+</div>
+  
+<% end %>
+</div>

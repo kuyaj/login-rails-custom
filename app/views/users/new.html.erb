@@ -1,0 +1,23 @@
+<div class="segment">
+<h1>Signup</h1>
+
+<%= form_for :user, url: '/users' do |f| %>
+  <div class="segment-input">
+    Name : <%= f.text_field :name, placeholder: "Peter"%>
+  </div>
+  <div class="segment-input">
+    Email : <%= f.email_field :email, placeholder: " your_universe@example.com" %>
+  </div>
+  <div class="segment-input">
+     Password: <%= f.password_field :password, placeholder: "Password" %>
+  </div>
+  <div class="segment-input">
+    Password Confirmation: <%= f.password_field :password_confirmation, placeholder: "Password confirmation" %>
+  </div>
+  <div class="segment-input">
+    <%= f.submit "Submit", class: "button-primary" %>
+  </div>
+<% end %>
+
+
+</div>
