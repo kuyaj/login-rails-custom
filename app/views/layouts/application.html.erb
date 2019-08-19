@@ -10,23 +10,7 @@
   </head>
 
   <body>
-  <nav class="navbar">
-     <% if current_user %>
-     <div class="navbar-item">
-       Signed in as <%= current_user.name %> 
-     </div>
-     <div class="navbar-item">
-      <%= link_to "Logout", '/logout' %>
-     </div>
-    <% else %>
-      <div class="navbar-item">
-          <%= link_to 'Login', '/login' %> 
-      </div>
-      <div class="navbar-item">
-        <%= link_to 'Signup', '/signup' %>
-      </div>
-    <% end %>
-  </nav>
+     <%= render 'layouts/navbar' %>
    <div class="container">
      <%= yield %>
    </div>
