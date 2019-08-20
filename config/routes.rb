@@ -3,15 +3,13 @@ LoginApp::Application.routes.draw do
   root to:'logins#home'
 
   #these routes are showing users a login, a login form, loggin them in, and logging them out.
-
-  #this is for session controller
-  get 'login' => 'sessions#new'
-  post '/login' => 'sessions#create'
-  get 'logout' => 'sessions#destroy'
+  get '/login' => 'sessions#login'
+  post '/login' => 'sessions#create_new_user'
+  get '/logout' => 'sessions#logout'
 
   #login or create new user
   #this is for users controller
-  get '/signup' => 'users#new'
-  post '/users' => 'users#create'
+  get '/signup' => 'users#register'
+  post '/users' => 'users#create_new_user'
 
 end

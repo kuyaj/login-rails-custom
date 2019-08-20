@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  def new
+  # action to show register form
+  def register
   end
 
+  #action to create new user
   def create
     user = User.new(user_params)
     if user.save
